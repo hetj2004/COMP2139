@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\comp2139\\COMP2139-Labs\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\COMP2139-Labs.bundle.scp.css",
-      "PackagePath": "staticwebassets\\COMP2139-Labs.bundle.scp.css"
+      "PackagePath": "staticwebassets\\COMP2139-Labs.btv6tcrrdv.bundle.scp.css"
     },
     {
       "Id": "C:\\comp2139\\COMP2139-Labs\\wwwroot\\css\\site.css",
@@ -243,6 +243,10 @@
     {
       "Id": "C:\\comp2139\\COMP2139-Labs\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.COMP2139-Labs.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.COMP2139-Labs.Microsoft.AspNetCore.StaticWebAssets.props",
