@@ -28,3 +28,4 @@ C:\Users\dhair\COMP2139\COMP2139-Labs\obj\Debug\net8.0\refint\COMP2139-Labs.dll
 C:\Users\dhair\COMP2139\COMP2139-Labs\obj\Debug\net8.0\COMP2139-Labs.pdb
 C:\Users\dhair\COMP2139\COMP2139-Labs\obj\Debug\net8.0\COMP2139-Labs.genruntimeconfig.cache
 C:\Users\dhair\COMP2139\COMP2139-Labs\obj\Debug\net8.0\ref\COMP2139-Labs.dll
+C:\Users\dhair\COMP2139\COMP2139-Labs\obj\Debug\net8.0\COMP2139-Labs.sourcelink.json
