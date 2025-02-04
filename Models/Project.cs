@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using COMP2139_Labs.Models;
 
 namespace comp2139.Models;
 
@@ -23,4 +24,8 @@ public class Project
     public DateTime EndDate { get; set; }
     
     public string? Status { get;set; }
+    
+    //One-to-Many
+    //This will allow EF Core to understand that one Project has potentially many ProjectTasks
+    public List<ProjectTask>? Tasks { get; set; }
 }
