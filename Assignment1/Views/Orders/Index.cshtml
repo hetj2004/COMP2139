@@ -1,0 +1,35 @@
+@model IEnumerable<Assignment1.Models.Order>
+
+<h2>Orders</h2>
+
+<p>
+    <a asp-action="Create">Create New Order</a>
+</p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Order ID</th>
+        <th>Guest Name</th>
+        <th>Guest Email</th>
+        <th>Order Date</th>
+        <th>Total Price</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.GuestName</td>
+            <td>@item.GuestEmail</td>
+            <td>@item.OrderDate</td>
+            <td>@item.TotalPrice</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
