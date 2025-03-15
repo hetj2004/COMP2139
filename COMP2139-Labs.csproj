@@ -7,4 +7,66 @@
         <RootNamespace>COMP2139_Labs</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\appsettings.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\bin\Debug\net8.0\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\bin\Debug\net8.0\appsettings.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\bin\Debug\net8.0\SmartInventoryManagement.deps.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\bin\Debug\net8.0\SmartInventoryManagement.runtimeconfig.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\bin\Debug\net8.0\SmartInventoryManagement.staticwebassets.runtime.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\obj\Debug\net8.0\staticwebassets.build.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\obj\Debug\net8.0\staticwebassets.development.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\obj\Debug\net8.0\staticwebassets.pack.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\obj\SmartInventoryManagement.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Properties\launchSettings.json" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\Home\Privacy.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\Inventory\Add.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\Inventory\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\Inventory\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\Order\confirmation.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\Search\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\Shared\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\Shared\_Layout.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\Shared\_ValidationScriptsPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="SmartInventoryManagement\SmartInventoryManagement\Views\_ViewStart.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Project\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\ProjectTask\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.Design" Version="1.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\ProjectTask\Create.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\ProjectTask\Delete.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\ProjectTask\Details.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\ProjectTask\Edit.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\ProjectTask\Index.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Create.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Delete.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Details.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Edit.cshtml" />
+      <AdditionalFiles Include="Areas\ProjectManagement\Views\Project\Index.cshtml" />
+    </ItemGroup>
+
 </Project>

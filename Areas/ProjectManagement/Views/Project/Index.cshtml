@@ -1,0 +1,67 @@
+@* Indicates that the view expexts a list of Projects as its model *@
+@model List<COMP2139_Labs.Areas.ProjectManagement.Models.Project>
+
+@{
+    //razor block
+    ViewBag.Title = "List of Projects";
+    Layout = "_Layout";
+
+    bool searchPerformed = ViewData["SearchPerformed"] as bool? ?? false;
+    string searchString = ViewData["SearchString"] as string;
+}
+
+<h2>Project Listing</h2>
+
+<a asp-action="Create" class="btn btn-primary">Create New Project</a>
+@if (Model.Any())
+{
+    //Iterate
+    <table class="table">
+        
+        <thead>
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Summary</th>
+        <th>Actions</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        @foreach (var project in Model)
+        {
+            <tr>
+            <td>@project.ProjectId</td>
+                <td><p>@Html.DisplayFor(model => project.Name, "ProjectName")</p></td>
+            <td><p>@Html.DisplayFor(model => project.Description, "ProjectDescription")</p></td>
+
+                <td>
+                    @await Component.InvokeAsync("ProjectSummary", new { projectId = project.ProjectId })
+                </td>
+
+                <td class="text-nowrap">
+                    <a asp-area="ProjectManagement" asp-controller="Project" asp-action="Details" asp-route-id="@project.ProjectId" class="btn btn-info">Details</a>
+                    <a asp-area="ProjectManagement" asp-controller="Project" asp-action="Edit" asp-route-id="@project.ProjectId" class="btn btn-secondary">Edit</a>
+                    <a asp-area="ProjectManagement" asp-controller="Project" asp-action="Delete" asp-route-id="@project.ProjectId" class="btn btn-danger">Delete</a>
+
+
+                    <a asp-controller="ProjectTask" asp-action="Index" asp-route-projectId="@project.ProjectId" class="btn btn-warning">View Tasks</a>
+            </td>
+            
+            </tr>
+        }   
+        </tbody>
+    </table>
+}
+else
+{
+    if (searchPerformed)
+    {
+        <p>No project with string "@searchString" were found</p>
+    }
+    else
+    {
+        <p>No projects available</p>
+    }
+}

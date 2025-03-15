@@ -1,0 +1,23 @@
+@model COMP2139_Labs.Areas.ProjectManagement.Models.ProjectTask
+@{
+    ViewData["Title"] = "Edit Task";
+}
+
+<h2>Edit Task</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ProjectTaskId"/>
+    <input type="hidden" asp-for="ProjectId"/>
+
+    <div class="form-group">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save Changes</button>
+    <a asp-action="Index" asp-route-projectId="@Model.ProjectId" class="btn btn-secondary">Cancel</a>
+</form>

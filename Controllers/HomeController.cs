@@ -28,4 +28,18 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+    public IActionResult GeneralSearch(string searchType, string searchString)
+    {
+        if (searchType == "projects")
+        {
+            return RedirectToAction("Search", "Project", new { area ="ProjectManagement",searchString });
+        }
+
+        else if (searchType == "Tasks")
+        {
+            return RedirectToAction("Search", "ProjectTask", new { area ="ProjectManagement",searchString });
+        }
+        return RedirectToAction(nameof(Index), "Home");
+    }
 }
